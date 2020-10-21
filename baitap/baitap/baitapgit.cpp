@@ -90,3 +90,32 @@ int main() {
 	}
 }
 
+//phep tru random
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main()
+{
+	srand(time(NULL));
+	int res = rand() % (100 - 1 + 1) + 1;
+	cout << res;
+	cout << endl;
+	int ros = rand() % (100 - 1 + 1) + 1;
+	cout << ros;
+	cout << endl;
+	int kq;
+	cout << "moi ban nhap kq hieu cua 2 so :";
+	cin >> kq;
+	if (kq == res - ros)
+	{
+		cout << "nhap dung";
+	}
+	else
+	{
+		cout << "ngu vl" << "\n " << res - ros << " moi dung";
+	}
+	return 0;
+}
+
