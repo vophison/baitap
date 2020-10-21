@@ -70,3 +70,23 @@ void main()
 		break;
 	}
 }
+//phepcongrandom
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include<iostream>
+using namespace std;
+
+int random(int minN, int maxN) {
+	return minN + rand() % (maxN + 1 - minN);
+}
+
+int main() {
+	srand((int)time(0));
+	int r;
+	for (int i = 0; i < 2; ++i) {
+		r = random(1, 100);
+		printf("%d ", r);
+	}
+}
+
